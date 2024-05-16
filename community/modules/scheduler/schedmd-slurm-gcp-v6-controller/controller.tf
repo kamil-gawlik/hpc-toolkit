@@ -95,7 +95,7 @@ locals {
 }
 
 module "slurm_controller_instance" {
-  source = "github.com/wiktorn/slurm-gcp.git//terraform/slurm_cluster/modules/_slurm_instance?ref=de5524af18b24fc6a816690c04700b86aa670edc""
+  source = "github.com/wiktorn/slurm-gcp.git//terraform/slurm_cluster/modules/_slurm_instance?ref=de5524af18b24fc6a816690c04700b86aa670edc"
 
   access_config       = var.enable_controller_public_ips ? [local.access_config] : []
   add_hostname_suffix = false
